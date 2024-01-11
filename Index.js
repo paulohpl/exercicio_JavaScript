@@ -8,14 +8,17 @@ Código Condição de pagamento:
 4 - Acima de duas vezes, preço normal de etiqueta mais juros de 10%; */
 
 const preco_de_etiqueta = 134.99;
-const forma_de_pagamento = 1;
+const forma_de_pagamento = 4;
 
 if (forma_de_pagamento === 1) {
-    console.log(preco_de_etiqueta - (preco_de_etiqueta * 0.1));
+    const resultado = preco_de_etiqueta - (preco_de_etiqueta * 0.1); 
+    console.log(resultado.toFixed(2));
 } else if (forma_de_pagamento === 2) {
-    console.log( preco_de_etiqueta - (preco_de_etiqueta * 0.15));
+    const resultado = preco_de_etiqueta - (preco_de_etiqueta * 0.15);
+    console.log(resultado.toFixed(2));
 } else if (forma_de_pagamento === 3) {
-    console.log(preco_de_etiqueta);
-} else (forma_de_pagamento === 4) {
-    console.log(preco_de_etiqueta + (preco_de_etiqueta * 0.1));
+    console.log(preco_de_etiqueta.toFixed(2));
+} else if (forma_de_pagamento === 4) {
+    const resultado = preco_de_etiqueta + (preco_de_etiqueta * 0.1);
+    console.log(resultado);
 }
